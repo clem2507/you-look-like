@@ -1,0 +1,5 @@
+train: C:\Users\cdetr\Documents\GitHub\you-look-like\data\train
+val: C:\Users\cdetr\Documents\GitHub\you-look-like\data\val
+
+nc: 1
+names: ["face"]
