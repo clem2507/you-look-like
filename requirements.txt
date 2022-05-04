@@ -1,3 +1,5 @@
 # pip install -r requirements.txt
 
 numpy
+selenium
+webdriver-manager
