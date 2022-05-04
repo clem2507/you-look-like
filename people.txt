@@ -1,5 +1,9 @@
-Kamala Harris
 Selena Gomez
+Emma Watson
+Vanessa Hudgens
+Kendall Jenner
+Miley Cyrus
+Kamala Harris
 Cardi B
 Lady Gaga
 Greta Thunberg
@@ -13,9 +17,6 @@ Dua Lipa
 Ariana Grande
 Kim Kardashian West
 Kylie Jenner
-Kendall Jenner
-Miley Cyrus
-Emma Watson
 Angelina Jolie
 Hilary Clinton
 Jennifer Aniston
@@ -27,7 +28,6 @@ Nicki Minaj
 Paris Hilton
 Megan Fox
 Kristen Stewart
-Vanessa Hudgens
 Diane Kruger
 Beyoncé
 Demi Lovato
