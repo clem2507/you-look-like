@@ -51,7 +51,6 @@ from utils.general import (LOGGER, check_file, check_img_size, check_imshow, che
 from utils.plots import Annotator, colors, save_one_box
 from utils.torch_utils import select_device, time_sync
 
-
 @torch.no_grad()
 def run(
         weights=ROOT / 'yolov5s.pt',  # model.pt path(s)
@@ -113,7 +112,7 @@ def run(
     # Run inference
     model.warmup(imgsz=(1 if pt else bs, 3, *imgsz))  # warmup
     dt, seen = [0.0, 0.0, 0.0], 0
-    bb_coordinates = {}
+    bb_coordinates = {'x_tl':0, 'y_tl':0, 'x_br':0, 'y_br':0}
     selected_frame = None
     num_pred = 0
     for path, im, im0s, vid_cap, s in dataset:
@@ -217,6 +216,7 @@ def run(
                     vid_writer[i].write(im0)
 
         if keyboard.is_pressed('enter') and flag:
+            cv2.destroyAllWindows()
             break
 
         # Print time (inference-only)
@@ -230,7 +230,7 @@ def run(
         LOGGER.info(f"Results saved to {colorstr('bold', save_dir)}{s}")
     if update:
         strip_optimizer(weights)  # update model (to fix SourceChangeWarning)
-    print(f'face bounding box coordinates: {bb_coordinates}')
+    # print(f'face bounding box coordinates: {bb_coordinates}')
     return {'frame': selected_frame, 'box': bb_coordinates, 'num_pred': num_pred}
 
 

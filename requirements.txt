@@ -1,5 +1,7 @@
 # pip install -r requirements.txt
 
+wandb
 numpy
 selenium
 webdriver-manager
+tensorflow-gpu

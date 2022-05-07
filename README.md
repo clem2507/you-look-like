@@ -2,11 +2,10 @@
 
 ## Instal requirements
 
+pip install -r yolov5/requirements.txt
+
 pip install -r requirements.txt
 
-## Install yolov5
-
-cd models
-git clone https://github.com/ultralytics/yolov5.git
-cd yolov5
-pip install -r requirements.txt
+<div>
+    <a href="https://drive.google.com/file/d/17Q2QVAkAO2J2WfkKJiA_ECKVebR6vtoR/view?usp=sharing"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"></a>
+</div>
