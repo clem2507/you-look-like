@@ -111,7 +111,7 @@ def get_all_items(page, main_directory, dir_name, limit):
     # f.write('\n'.join(urls))
     # f.close()
 
-    while count < limit+1:
+    while count < limit+1 and count < len(urls):
         #download the images
         url = urls[count]
         download_image(url, main_directory, dir_name, count)
